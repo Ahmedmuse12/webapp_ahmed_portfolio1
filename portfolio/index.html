@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosjektoversikt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Prosjektoversikt</h1>
+    </header>
+    <main>
+        <section aria-labelledby="project-list-heading">
+            <h2 id="project-list-heading">Alle Prosjekter</h2>
+            <ul id="project-list">
+                <li>Prosjekt 1</li>
+                <li>Prosjekt 2</li>
+                <li>Prosjekt 3</li>
+            </ul>
+        </section>
+        <section aria-labelledby="new-project-heading">
+            <h2 id="new-project-heading">Nytt Prosjekt</h2>
+            <form id="project-form">
+                <fieldset>
+                    <legend>Prosjektdetaljer</legend>
+
+                    <label for="project-name">Prosjektnavn:</label>
+                    <input type="text" id="project-name" name="project-name" required>
+
+                    <label for="description">Beskrivelse:</label>
+                    <textarea id="description" name="description" required></textarea>
+
+                    <label for="start-date">Startdato:</label>
+                    <input type="date" id="start-date" name="start-date" required>
+
+                    <label for="end-date">Sluttdato:</label>
+                    <input type="date" id="end-date" name="end-date" required>
+
+                    <button type="submit">Lagre</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Prosjektoversikt</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
