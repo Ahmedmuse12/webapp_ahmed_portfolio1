@@ -1,5 +1,3 @@
-// src/components/Project.tsx
-
 import React from 'react';
 
 interface ProjectProps {
